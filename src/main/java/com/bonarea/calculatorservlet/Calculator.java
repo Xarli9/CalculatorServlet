@@ -5,10 +5,15 @@
  */
 package com.bonarea.calculatorservlet;
 
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Named;
+
 /**
  *
  * @author Carles
  */
+@RequestScoped
+@Named("calculator")
 public class Calculator implements ICalculator {
 
     @Override
